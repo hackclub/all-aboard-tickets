@@ -37,10 +37,6 @@ export default async (req, res) => {
       valid = true
       number = x['fields']['Number'] 
     }
-    return {
-      username: x['fields']['Usernames'],
-      number: index
-    }
   })
 
   if (!valid) {
@@ -49,10 +45,6 @@ export default async (req, res) => {
     paths = paths.map((x, index) => {
       if (x['fields']['Usernames'] == req.query.username) {
         valid = true
-        number = x['fields']['Number'] 
-      }
-      return {
-        username: x['fields']['Usernames'],
         number = x['fields']['Number'] 
       }
     })

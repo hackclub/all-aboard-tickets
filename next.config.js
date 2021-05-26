@@ -6,7 +6,7 @@ module.exports = withMDX({
       'cloud-16uu33t6r-hack-club-bot.vercel.app',
       'upload.wikimedia.org',
       '261.com',
-      'cloud-3q64c1iul-hack-club-bot.vercel.app'
+      'cloud-awp2vjv78-hack-club-bot.vercel.app'
     ]
   }
 })
