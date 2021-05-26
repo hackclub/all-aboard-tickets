@@ -19,7 +19,7 @@ export default function App({ username, name }) {
     <Box
       sx={{
         backgroundColor: '#906b52',
-        backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.79) 82.13%), url(https://cloud-awp2vjv78-hack-club-bot.vercel.app/0valley.png)`,
+        backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.79) 82.13%), url(/_next/image?url=https://cloud-awp2vjv78-hack-club-bot.vercel.app/0valley.png&w=1920&q=90)`,
         backgroundSize: 'cover'
       }}
     >
