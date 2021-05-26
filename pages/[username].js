@@ -24,7 +24,6 @@ export default function App({ username, name }) {
     >
       <Meta
         title={`${name} is going to this Saturday's secret Hack Club meeting.`}
-        description="...."
         image={`https://tickets.hackclub.com/api/ticket?username=${username}`}
       />
       <Container variant="copy">
