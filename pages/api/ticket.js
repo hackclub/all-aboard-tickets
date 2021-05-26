@@ -35,7 +35,7 @@ export default async (req, res) => {
   paths = paths.map((x, index) => {
     if (x['fields']['Usernames'] == req.query.username) {
       valid = true
-      number = index + 1
+      number = x['fields']['Number'] 
     }
     return {
       username: x['fields']['Usernames'],
@@ -49,11 +49,11 @@ export default async (req, res) => {
     paths = paths.map((x, index) => {
       if (x['fields']['Usernames'] == req.query.username) {
         valid = true
-        number = index + 1
+        number = x['fields']['Number'] 
       }
       return {
         username: x['fields']['Usernames'],
-        number: index
+        number = x['fields']['Number'] 
       }
     })
   }
@@ -167,7 +167,7 @@ export default async (req, res) => {
       }
     })
   })
-  console.log(colours)
+  console.log(colours.length)
   colours.reduce((unique, item) => {
     return unique.includes(item) ? unique : [...unique, item]
   }, [])
