@@ -19,7 +19,8 @@ export default function App({ username, name }) {
     <Box
       sx={{
         backgroundColor: '#906b52',
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23694e3c' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E")`
+        backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.79) 82.13%), url(https://cloud-awp2vjv78-hack-club-bot.vercel.app/0valley.png)`,
+        backgroundSize: 'cover'
       }}
     >
       <Meta
