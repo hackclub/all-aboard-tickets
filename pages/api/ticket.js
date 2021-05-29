@@ -166,7 +166,7 @@ export default async (req, res) => {
   console.log(colours)
   try {
     const parsedReq = parseRequest(req)
-    const html = getHtml(parsedReq, details.user.profile.real_name, number, colours[number > colours.length ? Math.round(number/3) - 150 : number], details.user.profile.image_192)
+    const html = getHtml(parsedReq, details.user.profile.real_name, number, colours[number > colours.length ? Math.floor(Math.random()*colours.length) : number], details.user.profile.image_192)
     if (isHtmlDebug) {
       res.setHeader('Content-Type', 'text/html')
       res.end(`<div style="width: 1200px; height: 630px">${html}</div>`)
