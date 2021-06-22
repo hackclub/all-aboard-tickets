@@ -3936,14 +3936,7 @@ export default async (req, res) => {
   })
 
   if (!valid) {
-    const res = await airtable.create({ Usernames: req.query.username })
-    paths = await airtable.read()
-    paths = paths.map((x, index) => {
-      if (x['fields']['Usernames'] == req.query.username) {
-        valid = true
-        number = x['fields']['Number']
-      }
-    })
+    res.send('Invalid')
   }
   const palx = require('palx')
   let colours = []
